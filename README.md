@@ -1,29 +1,27 @@
-🔐 Cybersecurity Lab Environment Setup
+#🔐 Cybersecurity Lab Environment Setup
 
 NetworkWalks Cybersecurity Internship | Week 1
 
-A practical cybersecurity lab environment built using VirtualBox and Kali Linux. The purpose of this project was to create a controlled virtual environment for cybersecurity and networking practice, configure virtual networking, and verify connectivity and essential security tools.
+A practical cybersecurity lab environment built using VirtualBox and Kali Linux. This project focuses on creating a controlled environment for cybersecurity and networking practice, configuring virtual networking, and verifying connectivity and essential security tools.
 
 ---
 
-🎯 Project Objectives
-
-The main objectives of this project were:
+##🎯 Project Objectives
 
 - Set up a cybersecurity lab using VirtualBox
-- Configure a NAT Network for virtual machines
+- Configure a NAT Network
 - Connect Kali Linux to the virtual network
 - Verify network connectivity
 - Verify DNS resolution
 - Verify Nmap installation
-- Troubleshoot basic VirtualBox networking issues
-- Document the complete setup with screenshots
+- Troubleshoot basic networking issues
+- Document the completed lab environment
 
 ---
 
-⚙️ Lab Environment
+##⚙️ Lab Environment
 
-Component| Details
+Component| Configuration
 Virtualization Platform| VirtualBox 7.2.16
 Operating System| Kali Linux
 Network Mode| NAT Network
@@ -32,55 +30,49 @@ Purpose| Cybersecurity & Networking Practice
 
 ---
 
-🖥️ VirtualBox NAT Network Configuration
+##🖥️ NAT Network Configuration
 
-A NAT Network was created in VirtualBox to provide network connectivity for the cybersecurity lab.
-
-The network was configured using the required "10.0.0.0/24" range with DHCP enabled.
+A NAT Network was created in VirtualBox and configured with the required "10.0.0.0/24" network range.
 
 "NAT Network Configuration" (./01-NAT-Network-Configuration.png)
 
 ---
 
-🐉 Kali Linux Virtual Machine
+##🐉 Kali Linux Virtual Machine
 
-Kali Linux was used as the primary cybersecurity virtual machine.
-
-The virtual machine was connected to the configured NAT Network so that network connectivity and cybersecurity tools could be tested inside the lab.
+Kali Linux was configured as the primary cybersecurity virtual machine and connected to the NAT Network.
 
 "Kali Linux Virtual Machine" (./02-Kali-Linux-VM.png)
 
 ---
 
-🌐 Network Connectivity Verification
+##🌐 Network Connectivity Verification
 
-Network connectivity was tested from Kali Linux using Google's public DNS server:
+Network connectivity was tested from Kali Linux using:
 
 ping -c 4 8.8.8.8
 
-The final test completed successfully with 0% packet loss, confirming that the Kali Linux virtual machine had working network connectivity.
+The final connectivity test completed successfully with 0% packet loss.
 
 "Network Connectivity Test" (./03-Network-Connectivity-Ping.png)
 
 ---
 
-🔎 DNS Resolution Verification
+##🔎 DNS Resolution Verification
 
-DNS functionality was tested using:
+DNS resolution was tested using:
 
 nslookup google.com
 
-The command successfully resolved the domain name, confirming that DNS resolution was working correctly inside the lab.
+The command successfully resolved the domain name.
 
 "DNS Verification" (./05-DNS-Verification.png)
 
 ---
 
-🛡️ Nmap Verification
+##🛡️ Nmap Verification
 
-Nmap is an important network scanning and security assessment tool included in Kali Linux.
-
-Its installation was verified using:
+Nmap installation was verified using:
 
 nmap --version
 
@@ -90,56 +82,52 @@ The command successfully displayed the installed Nmap version.
 
 ---
 
-🐞 Troubleshooting & Solutions
+##🐞 Troubleshooting Experience
 
-NAT Network had the wrong default range
+NAT Network Configuration
 
-When the NAT Network was initially created, VirtualBox assigned a different default network range.
+Problem: The NAT Network was initially created with a different default network range.
 
-Solution:
-The network configuration was changed to the required "10.0.0.0/24" range.
+Solution: The network configuration was changed to the required "10.0.0.0/24" range.
 
-Network Adapter could not be enabled
+Network Adapter Configuration
 
-The network adapter could not initially be enabled because the Kali Linux virtual machine was running.
+Problem: The network adapter could not initially be enabled while the Kali Linux virtual machine was running.
 
-Solution:
-The virtual machine was powered off, after which the network adapter could be enabled and configured correctly.
+Solution: The virtual machine was powered off, after which the network adapter could be enabled and configured correctly.
 
-Difficulty locating Network settings
+Finding Network Settings
 
-Initially, the Network settings were not immediately visible in the VirtualBox interface.
+Problem: Initially, the Network settings were not immediately visible in the VirtualBox interface.
 
-Solution:
-The VirtualBox settings were checked and the Network section was located and configured.
+Solution: The VirtualBox settings were checked and the Network section was located and configured.
 
 ---
 
-📚 Skills & Knowledge Gained
+#📚 Skills & Knowledge Gained
 
 This project provided practical experience with:
 
 - VirtualBox virtual machine management
 - NAT Network configuration
 - Kali Linux lab setup
-- Basic network troubleshooting
 - Network connectivity testing
-- DNS troubleshooting and verification
+- DNS verification
 - Nmap verification
+- Basic network troubleshooting
 - Cybersecurity lab documentation
-- Safe and authorized cybersecurity practice
 
 ---
 
-🔐 Security & Ethical Use
+##🔐 Security & Ethical Use
 
-This laboratory is intended strictly for educational and authorized cybersecurity practice.
+This laboratory environment is intended for educational and authorized cybersecurity practice.
 
-Security testing should only be performed on systems and networks that are owned by the tester or where explicit permission has been provided.
+All cybersecurity testing should only be performed on systems and networks that are owned by the tester or where explicit permission has been provided.
 
 ---
 
-👤 Project Details
+##👤 Project Details
 
 Student: Ishanya Jha
 Internship: NetworkWalks Cybersecurity Internship
@@ -150,6 +138,4 @@ Project: Cybersecurity Lab Environment Setup
 
 📸 Project Evidence
 
-The repository contains screenshots documenting the major configuration and verification stages of the cybersecurity lab.
-
-Lab configured successfully. Connectivity verified. Nmap verified. Documentation completed. 🔐
+The screenshots in this repository document the major configuration and verification stages completed during the project.
